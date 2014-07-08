@@ -23,9 +23,6 @@ class PageView: UIViewController {
         PNObservationCenter.defaultCenter().addClientConnectionStateObserver(self) { (origin: String!, connected: Bool!, error: PNError!) in
             if connected {
                 println("OBSERVER: Successful Connection!");
-                PubNub.requestParticipantsListForChannel(myChannel) { (list: Array<AnyObject>!, channel: PNChannel!, error: PNError!) in
-                    println("BLOCK: Requested Here_Now on Channel: \(channel), \(list)")
-                }
                 
                 PubNub.subscribeOnChannel(myChannel)
                 
