@@ -12,6 +12,10 @@
 		3D5B571E1964AAE2000A1666 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5B571C1964AAE2000A1666 /* Main.storyboard */; };
 		3D5B57201964AAE2000A1666 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5B571F1964AAE2000A1666 /* Images.xcassets */; };
 		3D5B572C1964AAE2000A1666 /* PubNubPresence1TutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B572B1964AAE2000A1666 /* PubNubPresence1TutorialTests.swift */; };
+		3D5B57371964B0E2000A1666 /* RobertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B57361964B0E2000A1666 /* RobertView.swift */; };
+		3D5B57391964B117000A1666 /* JonesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B57381964B117000A1666 /* JonesView.swift */; };
+		3D5B573B1964B13C000A1666 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B573A1964B13C000A1666 /* PageView.swift */; };
+		3D5B573D1964B15D000A1666 /* BonhamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B573C1964B15D000A1666 /* BonhamView.swift */; };
 		DF36230CF54442E0A998ACD2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9020B2F790408381AD8B5C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +40,10 @@
 		3D5B572A1964AAE2000A1666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D5B572B1964AAE2000A1666 /* PubNubPresence1TutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PubNubPresence1TutorialTests.swift; sourceTree = "<group>"; };
 		3D5B57351964AC05000A1666 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		3D5B57361964B0E2000A1666 /* RobertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RobertView.swift; sourceTree = "<group>"; };
+		3D5B57381964B117000A1666 /* JonesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JonesView.swift; sourceTree = "<group>"; };
+		3D5B573A1964B13C000A1666 /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		3D5B573C1964B15D000A1666 /* BonhamView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonhamView.swift; sourceTree = "<group>"; };
 		DB9020B2F790408381AD8B5C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C02F6E2A3245B382489A6F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +94,10 @@
 				3D5B571A1964AAE2000A1666 /* ViewController.swift */,
 				3D5B57351964AC05000A1666 /* BridgingHeader.h */,
 				3D5B571C1964AAE2000A1666 /* Main.storyboard */,
+				3D5B573A1964B13C000A1666 /* PageView.swift */,
+				3D5B57361964B0E2000A1666 /* RobertView.swift */,
+				3D5B573C1964B15D000A1666 /* BonhamView.swift */,
+				3D5B57381964B117000A1666 /* JonesView.swift */,
 				3D5B571F1964AAE2000A1666 /* Images.xcassets */,
 				3D5B57161964AAE2000A1666 /* Supporting Files */,
 			);
@@ -259,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D5B573B1964B13C000A1666 /* PageView.swift in Sources */,
+				3D5B57391964B117000A1666 /* JonesView.swift in Sources */,
 				3D5B571B1964AAE2000A1666 /* ViewController.swift in Sources */,
 				3D5B57191964AAE2000A1666 /* AppDelegate.swift in Sources */,
+				3D5B57371964B0E2000A1666 /* RobertView.swift in Sources */,
+				3D5B573D1964B15D000A1666 /* BonhamView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

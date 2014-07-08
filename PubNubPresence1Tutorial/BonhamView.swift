@@ -1,24 +1,24 @@
 //
-//  ViewController.swift
+//  BonhamView.swift
 //  PubNubPresence1Tutorial
 //
-//  Created by Eric Theis on 7/1/14.
+//  Created by Eric Theis on 7/2/14.
 //  Copyright (c) 2014 PubNub. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class BonhamView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         var myConfig = PNConfiguration(forOrigin: "pubsub.pubnub.com", publishKey: "demo", subscribeKey: "demo", secretKey: nil)
         PubNub.setConfiguration(myConfig)
-        var uuid = "littlerobertanthony48"
+        var uuid = "jbonham"
         PubNub.setClientIdentifier(uuid)
         PubNub.connect()
         
-        let myChannel = PNChannel.channelWithName("realtimeAwardsShow", shouldObservePresence: false) as PNChannel
+        let myChannel = PNChannel.channelWithName("hostbar", shouldObservePresence: false) as PNChannel
         
         PNObservationCenter.defaultCenter().addClientConnectionStateObserver(self) { (origin: String!, connected: Bool!, error: PNError!) in
             if connected {
@@ -27,13 +27,7 @@ class ViewController: UIViewController {
                     println("BLOCK: Requested Here_Now on Channel: \(channel), \(list)")
                 }
                 
-                PubNub.subscribeOnChannel(myChannel, withClientState:
-                    ["age": "67",
-                        "full": "Robert Plant",
-                        "country": "UK",
-                        "appstate": "logged out",
-                        "latlong": "51.5072° N, 0.1275° W"])
-                
+                PubNub.subscribeOnChannel(myChannel)
                 
             } else {
                 println("OBSERVER: \(error.localizedDescription), Connection Failed!");
@@ -53,10 +47,6 @@ class ViewController: UIViewController {
             default:
                 println("OBSERVER: Something went wrong :(")
             }
-        }
-        
-        PNObservationCenter.defaultCenter().addChannelParticipantsListProcessingObserver(self) { (list: AnyObject[]!, channel: PNChannel!, error: PNError!) in
-            println("OBSERVER: addChannelParticipantsListProcessingObserver: list: \(list), on Channel: \(channel)")
         }
     }
     
